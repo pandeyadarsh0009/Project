@@ -1,0 +1,39 @@
+#Ans 2:-
+def maxConsequtiveOnes(String):
+    if String is None or String.strip() is "" :
+        return 0
+    _max = 0
+    _ones = []
+    for i in String:
+        if i == "1":
+            _max += 1
+        if i == "0":
+            _max = 0
+        _ones.append(_max)
+    return max(_ones)
+    
+    
+    
+  #Ans 1:-
+list1 = [11, 5, 17, 18, 23]
+
+def sumOfList(list, size):
+if (size == 0):
+	return 0
+else:
+	return list[size - 1] + sumOfList(list, size - 1)
+total = sumOfList(list1, len(list1))
+
+print("Sum of all elements in given list: ", total)
+
+
+
+#Ans 3:-
+Dict1: = {“1” : “name1”,
+   “2” : “name2”,
+   “3” : “name3”
+} 
+
+Keymax = max(Dict1, key=Dict1) 
+print(Keymax) 
+
